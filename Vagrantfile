@@ -17,7 +17,7 @@ boxes = [
 Vagrant.configure("2") do |config|
   boxes.each do |opts|
     config.vm.define opts[:name] do |config|
-      config.vm.box = "opscode_debian_8_64"
+      config.vm.box = "ARTACK/debian-jessie"
       config.vm.box_url = "https://atlas.hashicorp.com/ARTACK/boxes/debian-jessie" 
       config.vm.boot_timeout = 600
 
